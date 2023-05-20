@@ -71,16 +71,18 @@ public class Solution {
 		if (total_quantity > 30 && (aquan > 15 || bquan > 15 || cquan > 15)) {
 			float dis1 = 0, dis2 = 0, dis3 = 0;
 			if (aquan > 15) {
-				cart_total = (aquan - 15)*20;
-				dis1=d.tiered_50_discount(cart_total);
-			} if (bquan > 15) {
-				cart_total = (bquan - 15)*40;
-				dis2=d.tiered_50_discount(cart_total);
-			} if(cquan>15) {
-				cart_total = (cquan - 15)*50;
-				dis3=d.tiered_50_discount(cart_total);
+				cart_total = (aquan - 15) * 20;
+				dis1 = d.tiered_50_discount(cart_total);
 			}
-			
+			if (bquan > 15) {
+				cart_total = (bquan - 15) * 40;
+				dis2 = d.tiered_50_discount(cart_total);
+			}
+			if (cquan > 15) {
+				cart_total = (cquan - 15) * 50;
+				dis3 = d.tiered_50_discount(cart_total);
+			}
+
 			if (dis1 > dis2 && dis1 > dis3) {
 				discount4 = dis1;
 			} else if (dis2 > dis1 && dis2 > dis3) {
@@ -90,7 +92,6 @@ public class Solution {
 			}
 		}
 
-		
 		// Finding most favourable discounts
 
 		if (discount1 > discount2) {
