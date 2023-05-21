@@ -2,6 +2,8 @@ package com;
 
 public class DiscountImpl implements Discount {
 
+	// Implementing the inherited abstract methods 
+	
 	@Override
 	public float flat_10_discount(float discount) {
 		discount = 10;
@@ -23,7 +25,7 @@ public class DiscountImpl implements Discount {
 	@Override
 	public float tiered_50_discount(float discount) {
 		discount = discount * 50 / 100;
-		return discount;
+		return discount ;
 
 	}
 }
