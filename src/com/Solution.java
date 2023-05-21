@@ -29,7 +29,8 @@ public class Solution {
 
 		Discount d = new DiscountImpl();
 
-		// Available Discounts
+		// Four Available Discounts
+
 		// Discount 1
 
 		if (cart_total > 200) {
@@ -150,6 +151,7 @@ public class Solution {
 		}
 		System.out.println("Shipping Fee : " + shipping_fee);
 		System.out.println("Gift Wrap Fee : " + gift_wrap_fee);
+		System.out.println("-----------------------------------------------------------");
 		System.out.println("Total : " + total);
 
 	}
